@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.8. ADSL y ATM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tema 3: Redes de Área Extensa y Tecnologías Asociadas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">3.1. Introducción</a></li>
+                <li><a href="tipos-redes.html">3.2. Tipos de Redes</a></li>
+                <li><a href="servicios-wan.html">3.3. Servicios WAN</a></li>
+                <li><a href="comunicaciones.html">3.4. Tipos de Comunicaciones</a></li>
+                <li><a href="ppp.html">3.5. Protocolo PPP</a></li>
+                <li><a href="conmutacion.html">3.6-3.7. Conmutación</a></li>
+                <li><a href="adsl-atm.html">3.8. ADSL y ATM</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="adsl-atm">
+            <h2>3.8. Tecnología ADSL y ATM</h2>
+
+            <h3>ADSL (Asymmetric Digital Subscriber Line)</h3>
+            <p>ADSL es la tecnología de banda ancha que permitió utilizar las líneas de cobre del teléfono para la transmisión de datos a alta velocidad. Opera mediante la división de la frecuencia disponible en el cable de cobre:</p>
+            <ul>
+                <li>**Banda Baja (0 - 4 kHz):** Reservada para la señal de voz analógica (POTS).</li>
+                <li>**Bandas Altas:** Utilizadas para el tráfico de datos, separando la descarga (más ancha) y la subida (más estrecha), de ahí su característica **asimétrica**.</li>
+                <li>**Funcionamiento:** Requiere un filtro (*splitter*) para separar la señal de voz de los datos y un módem ADSL.</li>
+            </ul>
+            
+
+            <h3>ATM (Asynchronous Transfer Mode)</h3>
+            <p>ATM es una tecnología de conmutación orientada a conexión, diseñada para manejar datos sensibles al tiempo (voz y vídeo) junto con datos tradicionales. Su característica definitoria es el uso de **celdas**:</p>
+            <ul>
+                <li>**Celdas Fijas:** A diferencia de los paquetes Ethernet o IP de tamaño variable, las celdas ATM tienen un tamaño fijo y pequeño de **53 bytes** (5 bytes de cabecera, 48 bytes de carga útil).</li>
+                <li>**Ventaja:** El tamaño fijo minimiza la variabilidad en la entrega (jitter), crucial para la QoS.</li>
+                <li>**Rol en ADSL:** En muchas arquitecturas de banda ancha, el flujo de datos desde el DSLAM (en la central) hasta la red troncal se transportaba utilizando celdas ATM, funcionando como un protocolo de Capa 2 robusto para el carrier.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Tema 3 - Desarrollado para fines educativos. Diciembre 2025.</p>
+    </footer>
+</body>
+</html>

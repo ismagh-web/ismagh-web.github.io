@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.6 y 3.7. Conmutación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tema 3: Redes de Área Extensa y Tecnologías Asociadas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">3.1. Introducción</a></li>
+                <li><a href="tipos-redes.html">3.2. Tipos de Redes</a></li>
+                <li><a href="servicios-wan.html">3.3. Servicios WAN</a></li>
+                <li><a href="comunicaciones.html">3.4. Tipos de Comunicaciones</a></li>
+                <li><a href="ppp.html">3.5. Protocolo PPP</a></li>
+                <li><a href="conmutacion.html">3.6-3.7. Conmutación</a></li>
+                <li><a href="adsl-atm.html">3.8. ADSL y ATM</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="conmutacion">
+            <h2>3.6. Conmutación de Circuitos y 3.7. Conmutación por Mensajes</h2>
+
+            <h3>3.6. Conmutación de Circuitos</h3>
+            <p>Este modelo de conmutación garantiza una ruta dedicada y exclusiva. La comunicación se divide en tres fases:</p>
+            <ol>
+                <li>**Establecimiento:** Se negocia y reserva el camino físico (circuito).</li>
+                <li>**Transferencia:** El flujo de datos utiliza el circuito reservado a velocidad constante.</li>
+                <li>**Desconexión:** El circuito se libera para que otros usuarios puedan utilizar los recursos.</li>
+            </ol>
+            <p>La principal desventaja es la **ineficiencia** del ancho de banda, ya que el circuito está reservado incluso durante los periodos de silencio (pausas). Es ideal para el tráfico isócrono (tiempo real) como la voz.</p>
+
+            <h3>3.7. Conmutación por Mensajes</h3>
+            <p>En este sistema, cada mensaje se trata como una unidad independiente. Los nodos intermedios deben recibir, almacenar por completo (*Store-and-Forward*) y verificar el mensaje antes de retransmitirlo al siguiente nodo.</p>
+            <ul>
+                <li><strong>Ventaja Histórica:</strong> Fue más eficiente que la conmutación de circuitos para datos, ya que no requería una ruta fija.</li>
+                <li><strong>Limitación:</strong> La latencia es muy alta y variable, ya que el mensaje debe ser completamente recibido antes de la retransmisión.</li>
+            </ul>
+            <p class="nota">La **Conmutación por Paquetes** superó a la conmutación por mensajes al dividir el mensaje en unidades más pequeñas (paquetes), permitiendo el envío mientras se reciben otros, reduciendo drásticamente la latencia.</p>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Tema 3 - Desarrollado para fines educativos. Diciembre 2025.</p>
+    </footer>
+</body>
+</html>

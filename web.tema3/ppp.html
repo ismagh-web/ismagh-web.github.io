@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.5. Protocolo PPP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tema 3: Redes de Área Extensa y Tecnologías Asociadas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">3.1. Introducción</a></li>
+                <li><a href="tipos-redes.html">3.2. Tipos de Redes</a></li>
+                <li><a href="servicios-wan.html">3.3. Servicios WAN</a></li>
+                <li><a href="comunicaciones.html">3.4. Tipos de Comunicaciones</a></li>
+                <li><a href="ppp.html">3.5. Protocolo PPP</a></li>
+                <li><a href="conmutacion.html">3.6-3.7. Conmutación</a></li>
+                <li><a href="adsl-atm.html">3.8. ADSL y ATM</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="protocolo-ppp">
+            <h2>3.5. Protocolo PPP (Point to Point Protocol)</h2>
+            <p>PPP es un protocolo fundamental en la pila TCP/IP, operando en la Capa 2 (Enlace de Datos). Está diseñado para manejar comunicaciones a través de enlaces punto a punto, superando las limitaciones de protocolos seriales anteriores.</p>
+            
+            <h3>Estructura y Componentes</h3>
+            <ul>
+                <li><strong>HDLC-like Framing:</strong> Define cómo se encapsulan los datos para su transmisión por la línea serial. Cada trama PPP incluye campos para delimitadores, direcciones, control y una comprobación de errores (FCS).</li>
+                <li><strong>LCP (Link Control Protocol):</strong> Es responsable de establecer, configurar y probar la conexión de Capa 2. LCP negocia parámetros como la autenticación, el manejo de errores y el tamaño máximo de paquete (MRU).</li>
+                <li><strong>NCP (Network Control Protocol):</strong> Es un conjunto de protocolos (como IPCP para IP) que configuran protocolos de Capa 3 para que puedan operar sobre el enlace PPP.</li>
+            </ul>
+
+            <h3>Variantes Importantes: PPPoE</h3>
+            <p>El **PPPoE (PPP over Ethernet)** es crucial. Permite incrustar las tramas PPP dentro de las tramas Ethernet. Esto es usado por muchos ISP para el acceso a Internet (ADSL/Fibra), ya que permite la **autenticación** individualizada de cada cliente antes de otorgarle acceso a la red IP.</p>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Tema 3 - Desarrollado para fines educativos. Diciembre 2025.</p>
+    </footer>
+</body>
+</html>

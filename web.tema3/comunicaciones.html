@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.4. Tipos de Comunicaciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tema 3: Redes de Área Extensa y Tecnologías Asociadas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">3.1. Introducción</a></li>
+                <li><a href="tipos-redes.html">3.2. Tipos de Redes</a></li>
+                <li><a href="servicios-wan.html">3.3. Servicios WAN</a></li>
+                <li><a href="comunicaciones.html">3.4. Tipos de Comunicaciones</a></li>
+                <li><a href="ppp.html">3.5. Protocolo PPP</a></li>
+                <li><a href="conmutacion.html">3.6-3.7. Conmutación</a></li>
+                <li><a href="adsl-atm.html">3.8. ADSL y ATM</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tipos-comunicaciones">
+            <h2>3.4. Tipos de Comunicaciones según la Dirección de Flujo</h2>
+            <p>La forma en que los datos fluyen entre dos dispositivos o nodos de red determina el tipo de comunicación y su eficiencia en diferentes escenarios.</p>
+            <ol>
+                <li>
+                    <h3>Simplex</h3>
+                    <p>La comunicación ocurre en una **única dirección**. El dispositivo fuente puede transmitir, pero el dispositivo destino solo puede recibir. No hay canal de retorno, por lo que no es posible la confirmación de recepción ni el control de flujo. **Aplicación:** Transmisión de datos de sensores unidireccionales.</p>
+                </li>
+                <li>
+                    <h3>Half-Duplex (Semi-dúplex)</h3>
+                    <p>La transmisión de datos es **bidireccional**, pero solo puede ocurrir en una dirección a la vez. Los dispositivos deben negociar quién está transmitiendo y quién está recibiendo. **Problema:** Colisiones si ambos intentan transmitir simultáneamente. **Aplicación:** Redes Ethernet antiguas que utilizaban CSMA/CD.</p>
+                </li>
+                <li>
+                    <h3>Full-Duplex (Dúplex Completo)</h3>
+                    <p>La transmisión de datos es **bidireccional y simultánea**. Ambos dispositivos pueden enviar y recibir datos al mismo tiempo sin interferencia mutua. Esto duplica la capacidad teórica del enlace. **Aplicación:** La mayoría de las redes modernas (Ethernet con *switches*), telefonía móvil y fija.</p>
+                </li>
+            </ol>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Tema 3 - Desarrollado para fines educativos. Diciembre 2025.</p>
+    </footer>
+</body>
+</html>
